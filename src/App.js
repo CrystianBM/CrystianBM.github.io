@@ -8,8 +8,11 @@ function App() {
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.error(error));
-  }, []);
-
+    
+    }, []);
+    
+    
+    console.log(data)
   return (
     <div>
       <h1>Data from PostgreSQL:</h1>
