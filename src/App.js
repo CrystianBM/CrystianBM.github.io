@@ -16,7 +16,8 @@ function App() {
   return (
     <div>
       <h1 color='blue'>Data from PostgreSQL:</h1>
-      {data ? <p>{JSON.stringify(data)}</p> : <p>Loading...</p>} 
+      {data ? <p>{JSON.stringify(data)}</p> : <p>Loading...</p>}
+      <br/> Does it show?
     </div>
   );
 }
