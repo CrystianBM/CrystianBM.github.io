@@ -1,5 +1,3 @@
-// projetos.js - Script da página de projetos
-
 // Filtro de projetos por categoria
 var filterBtns = document.querySelectorAll(".filter-btn");
 var cards = document.querySelectorAll(".project-card");
@@ -7,12 +5,12 @@ var cards = document.querySelectorAll(".project-card");
 filterBtns.forEach(function(btn) {
   btn.addEventListener("click", function() {
 
-    // Remove .active de todos os botões
+    // Remove classe "active" de todos os botões
     filterBtns.forEach(function(b) {
       b.classList.remove("active");
     });
 
-    // Adiciona .active no botão clicado
+    // Adiciona classe "active" no botão clicado
     this.classList.add("active");
 
     var categoria = this.getAttribute("data-filter");

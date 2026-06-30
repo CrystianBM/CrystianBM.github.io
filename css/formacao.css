@@ -1,0 +1,111 @@
+.formation-section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* skills */
+.skills-section {
+  margin-top: 50px;
+}
+
+.skills-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.skill-item {
+  background-color: #161616;
+  border: 1px solid #222;
+  padding: 14px 16px;
+  border-radius: 4px;
+}
+
+.skill-name {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #ddd;
+}
+
+.skill-bar-bg {
+  background-color: #222;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.skill-bar-fill-low {
+  height: 6px;
+  background-color: #302dff;
+  border-radius: 3px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+.skill-bar-fill-mid {
+  height: 6px;
+  background-color: #ed2dff;
+  border-radius: 3px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+.skill-bar-fill-high {
+  height: 6px;
+  background-color: #ff2d5a;
+  border-radius: 3px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+.skill-bar-fill-perfect {
+  height: 6px;
+  background-color: #45ff2d;
+  border-radius: 3px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+
+
+/* formação */
+.education-section {
+  background-color: #161616;
+  border-top: 1px solid #222;
+  margin-top: 50px;
+  padding: 60px 40px;
+}
+
+.education-section .container {
+  max-width: 1000px;
+}
+
+.edu-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-item {
+  border-left: 3px solid #ff2d5a;
+  padding-left: 20px;
+}
+
+.edu-item h4 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.edu-item p {
+  color: #888;
+  font-size: 14px;
+}

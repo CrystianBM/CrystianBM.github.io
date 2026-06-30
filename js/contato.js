@@ -1,3 +1,4 @@
+// JS simples para validação
 var form = document.getElementById("contact-form");
 var feedback = document.getElementById("form-feedback");
 
@@ -8,6 +9,7 @@ form.addEventListener("submit", function(e) {
   var email = document.getElementById("email").value.trim();
   var mensagem = document.getElementById("mensagem").value.trim();
 
+  // Validação
   if (nome === "" || email === "" || mensagem === "") {
     feedback.textContent = "Por favor, preencha todos os campos.";
     feedback.className = "error";
@@ -22,8 +24,11 @@ form.addEventListener("submit", function(e) {
     return;
   }
 
-  // Aqui você conectaria com um backend ou serviço como EmailJS / Formspree
-  // Por enquanto só exibe a mensagem de sucesso
+
+  // Espaço para integração com backend ou serviço de envio de e-mail posteriormente
+
+
+  // Mensagem de sucesso fictícia
   feedback.textContent = "Mensagem enviada! Entrarei em contato em breve.";
   feedback.className = "success";
   feedback.style.display = "block";

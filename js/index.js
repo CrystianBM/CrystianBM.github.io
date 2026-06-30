@@ -1,7 +1,5 @@
-// index.js - Script da página inicial
-
-// Efeito de digitação no nome
-var nomeCompleto = "Seu Nome";
+// Efeito de digitação do nome
+var nomeCompleto = "CRYSTIAN";
 var nomeEl = document.getElementById("typed-name");
 var index = 0;
 

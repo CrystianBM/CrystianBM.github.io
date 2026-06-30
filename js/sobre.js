@@ -1,18 +1,15 @@
-// sobre.js - Script da página sobre
+// Efeito de digitação do nome
+var nomeCompleto = "Seu Nome";
+var nomeEl = document.getElementById("typed-name");
+var index = 0;
 
-// Anima as barras de skill quando entram na tela
-var barras = document.querySelectorAll(".skill-bar-fill");
+function digitarNome() {
+  if (index < nomeCompleto.length) {
+    nomeEl.textContent += nomeCompleto[index];
+    index++;
+    setTimeout(digitarNome, 100);
+  }
+}
 
-var observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      var barra = entry.target;
-      var porcentagem = barra.getAttribute("data-width");
-      barra.style.width = porcentagem + "%";
-    }
-  });
-}, { threshold: 0.3 });
-
-barras.forEach(function(barra) {
-  observer.observe(barra);
-});
+// Começa a digitar depois de 400ms
+setTimeout(digitarNome, 400);
